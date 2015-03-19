@@ -49,7 +49,7 @@ response = kickbox.verify("test@example.com", { "timeout" => 60000 })
 
 A successful API call responds with the following values:
 
-- **result** `string` - The verification result: `valid`, `invalid`, `unknown`
+- **result** `string` - The verification result: `deliverable`, `Undeliverable`, `risky`, `unknown`
 - **reason** `string` - The reason for the result. Possible reasons are:
   - `invalid_email` - Specified email is not a valid email address syntax
   - `invalid_domain` - Domain for email does not exist
